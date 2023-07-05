@@ -1,2 +1,3 @@
-# sign-up-form
-Simple sign-up form made with HTML, CSS and a bit o JS
+# Sign-Up Form
+Simple sign-up form made with HTML and CSS
+

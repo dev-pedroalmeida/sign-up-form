@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: rgb(35, 170, 233);
+}
+
+.signup-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.image-wrapper {
+    width: 500px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#form-img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-over {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.image-over div {
+    background-color: rgba(0, 0, 0, 0.336);
+    text-align: center;
+    padding: 32px;
+    margin-top: 200px;
+}
+
+.image-over h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.image-over p {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-wrapper {
+    flex: 1;
+}
+
+.signup-header {
+    width: 500px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.divider {
+    width: 500px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: rgb(206, 206, 206);
+}
+
+.signup-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-row +  .form-row {
+    margin-top: 26px;
+}
+
+.form-element {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 8px 10px;
+    outline: transparent;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 6px;
+}
+
+input:focus {
+    border: 2px solid rgba(51, 82, 255, 0.336);
+    box-shadow: 1px 1px 15px -3px rgba(51, 54, 255, 0.336);
+    transition: all .3s ease-in-out;
+}
+
+input::placeholder {
+    color: rgb(192, 192, 192);
+}
+
+input:invalid:not(:placeholder-shown) {
+    background-color: rgba(255, 49, 49, 0.13);
+    color: red;
+    border-color: rgba(255, 0, 0, 0.13);;
+}
+
+input:invalid:not(:placeholder-shown)::placeholder {
+    color: rgba(255, 0, 0, 0.445);
+}
+
+label.error {
+    color: red;
+    font-size: .8rem;
+    display: none;
+}
+
+input:invalid:not(:placeholder-shown) + label.error {
+    display: inline;
+}
+
+.submit-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(34, 36, 155);
+    transition: all .2s ease;
+
+    cursor: pointer;
+
+    border: transparent;
+    outline: transparent;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: rgba(53, 37, 196, 0.849);
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up | Stellar</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="signup-container">
+        <div class="image-wrapper">
+            <img id="form-img" src="images/background.jpg" alt="Star background" />
+            <div class="image-over">
+                <div>
+                    <h1>Stellar solutions</h1>
+                </div>
+
+                <p>Photo by 
+                    <a href="https://unsplash.com/pt-br/@manufactured">Manuel Will</a>
+                    on
+                    <a href="https://unsplash.com/">Unsplash</a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="form-wrapper">
+            <div class="signup-header">
+                <h2>Sign up</h2>
+                <p>Already a member? <a href="#">Sign in</a> </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <form class="signup-form">
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" placeholder="John" name="first-name" id="first-name" required minlength="3" maxlength="25"/>
+                        <label for="first-name" class="error">*Must be 3-25 characters</label>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" placeholder="Doe" name="last-name" id="last-name" required  minlength="3" maxlength="25"/>
+                        <label for="last-name" class="error">*Must be 3-25 characters</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="john@email.com" name="email" id="email" maxlength="100" required/>
+                        <label for="email" class="error">*Valid emails only (john@email.com)</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="pwd">Password:</label>
+                        <input type="password" name="pwd" id="pwd" minlength="6" placeholder="******" required/>
+                        <label for="pwd" class="error">*Must have 6+ characters</label>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="pwdconf">Confirm Password:</label>
+                        <input type="password" name="pwdconf" id="pwdconf" minlength="6" placeholder="******" required/>
+                        <label for="pwdconf" class="error">*Must match the password</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <input type="checkbox" name="terms" id="terms" required/>
+                    <label for="terms">By creating an account you accept our Terms of Service</label>
+                </div>
+
+                <div class="form-row">
+                    <button class="submit-btn" type="submit">Create Account</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
